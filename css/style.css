@@ -1,0 +1,338 @@
+/* common style */
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    margin-top: 100px;
+}
+.container {
+    width: 1100px;
+}
+
+/* common style */
+
+
+/* Header style start */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.menu-title {
+    text-align: center;
+}
+
+.menu-list {
+    margin: 0 auto;
+}
+
+.menu-list ul {
+    display: flex;
+}
+
+.menu-list ul li {
+    list-style: none;
+    padding-right: 29px;
+}
+
+.menu-list ul li a {
+    text-decoration: none;
+    color: black;
+}
+.toggle{
+    display: none;
+}
+/* Header style end */
+
+
+/* Banner style start */
+
+.banner {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.banner-description h1 {
+    font-size: 50px;
+}
+
+.banner-description p {
+    font-size: 15px;
+    line-height: 26px;
+    text-align: justify;
+    width: 504px;
+}
+.btn {
+    padding: 15px 30px;
+    border-radius: 27px;
+    border: none;
+    background: #E02C6D;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    top: 31px;
+}
+.icon {
+    margin-left: 7px;
+}
+
+/* Banner style end */
+
+
+/* Brand style start */
+
+
+.brand-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 43px 0;
+    border-top: 1px solid #d3d3d361;
+    border-bottom: 1px solid #d3d3d361;
+}
+
+.company img {
+    width: 80px;
+}
+
+
+/* Brand style end */
+
+
+/* Product style start */
+
+
+.sec-title {
+    text-align: center;
+    height: 80px;
+}
+
+.sec-title h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.product-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 25px;
+}
+.product-details {
+    width: 300px;
+}
+
+.product-details {
+    box-shadow: 2px 4px 10px 3px #d3d3d36b;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.product-image img {
+    width: 99%;
+}
+
+.product-info h2 {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.product-info h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+.review {
+    color: orange;
+    font-size: 13px;
+}
+
+.product-info span {
+    color: #5E6366;
+    margin-left: 10px;
+}
+
+.product-info p {
+    width: 196px;
+    font-size: 15px;
+    color: #787885;
+}
+.details-btn {
+    text-align: right;
+    padding-top: 39px;
+}
+
+.details-btn a {
+    color: #E02C6D;
+    text-decoration: none;
+}
+
+
+/* Product style end */
+
+
+/* Featured style start */
+
+
+.featured {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.featured-description h1 {
+    font-size: 34px;
+}
+
+.featured-description p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #6C6C6C;
+    line-height: 30px;
+}
+
+.featured-description a {
+    text-decoration: none;
+    color: white;
+    background: #E02C6D;
+    padding: 11px 29px;
+    position: relative;
+    top: 20px;
+}
+
+
+/* Featured style end */
+
+
+/* Footer style start */
+
+
+.footer {
+    margin-top: 70px;
+    background: black;
+    padding: 50px 0;
+}
+
+.footer-description {
+    text-align: center;
+}
+
+.footer-description h2 {
+    color: white;
+    font-size: 25px;
+}
+
+.footer-description p {
+    width: 264px;
+    color: white;
+    font-size: 14px;
+    margin: auto;
+}
+.social-media {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-media a {
+    text-decoration: none;
+    padding-left: 21px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Footer style end */
+
+
+/* Responsive css */
+
+/*-------------------
+    Mobile device
+-------------------- */
+
+@media screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .banner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-description h1{
+        font-size: 3em;
+        font-weight: 600;
+    }
+    .banner-picture {
+        text-align: center;
+    }
+    .banner-picture img{
+        margin-top: 40px;
+    }
+    .banner-description{
+        text-align: center;
+    }
+    .banner-description p{
+        text-align: center;
+    }
+    .brand-area{
+        flex-direction: column;
+    }
+    .brand-area .company{
+        margin-bottom: 20px;
+    }
+    .product-area{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .product-details{
+        width: 90%;
+    }
+    .featured{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .featured-image{
+        text-align: center;
+    }
+    .featured-description{
+        text-align: center;
+    }
+}
+
+/*----------------
+    Tablet debice 
+ ----------------*/
+
+@media screen and (min-width:689px) and (max-width:991px) {
+    .container{
+        width: 100%;
+    }
+    .banner-picture img{
+        width: 400px;
+        height: auto;
+    }
+    .banner-description h1{
+        font-size: 3em;
+        font-weight: 600;
+    }
+    .brand-area{
+        flex-direction: column;
+    }
+    .company{
+        margin-bottom: 20px;
+    }
+    .product-area{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-details{
+        width: 90%;
+    }
+    .product-details:nth-child(2n+1){
+        display: none;
+    }
+}
